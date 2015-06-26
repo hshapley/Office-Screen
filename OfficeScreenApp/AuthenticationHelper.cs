@@ -32,7 +32,7 @@ namespace OfficeScreenApp
 
 
         // Add your redirect URI value here.
-        private static Uri redirectUri = new Uri("http://localhost");
+        private static Uri redirectUri = new Uri("http://localhost/profileSample");
 
 
         private static readonly Uri DiscoveryServiceEndpointUri = new Uri("https://api.office.com/discovery/v1.0/me/");
@@ -175,8 +175,6 @@ namespace OfficeScreenApp
                     // Shared User Certificates capabilities in the Package.appxmanifest file.
 
                     _authenticationContext.UseCorporateNetwork = true;
-
-
 
 
                     var token = await GetTokenHelperAsync(_authenticationContext, ResourceUrl);
