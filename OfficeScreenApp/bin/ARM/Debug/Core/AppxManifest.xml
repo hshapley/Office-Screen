@@ -31,6 +31,22 @@
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>CoreRuntime\OfficeScreenApp.exe</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserCredential" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserAssertion" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
     <build:Item Name="VisualStudio" Version="14.0" />
